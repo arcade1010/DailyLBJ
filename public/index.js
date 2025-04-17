@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     //Cycle color scheme
-    const themes = ["cavs", "heat", "lakers"];
-    const jerseyNumbers = [23, 6, 23]
+    const themes = ["cavs", "heat", "cav", "lakers"];
+    const jerseyNumbers = [23, 6, 23, 23]
     let current = 0;
 
     setInterval(() => {
