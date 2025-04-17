@@ -1,0 +1,124 @@
+/* Set global styles and center everything */
+header {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #2E1A47; /* deep Lakers purple */
+    color: #FFD700;            /* gold text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Title/Header */
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #FFD700;
+}
+
+/* Subtitle */
+.on-this-day {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #FFF8DC;
+}
+
+/* Message box for output */
+#message {
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: 2px solid #FFD700;
+    border-radius: 12px;
+    background-color: rgba(255, 215, 0, 0.1); /* transparent gold */
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+/* Button */
+#btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #FFD700;
+    color: #2E1A47;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#btn:hover {
+    background-color: #FFC300;
+}
+
+/* We'll update these dynamically with JS */
+
+body.cavs {
+    background-color: #6F263D; /* wine red */
+    color: #FDBB30;           /* gold */
+}
+
+body.cavs .title {
+    color: inherit;
+    background: transparent;
+}
+
+body.cavs #btn {
+    color: #0C2340;
+    background-color: #FDBB30;
+}
+
+
+body.heat {
+    background-color: #000000; /* black */
+    color: #F9A01B;            /* yellow-orange */
+}
+
+body.heat .title {
+    color: inherit;
+    background: transparent;
+}
+
+body.heat #btn {
+    color: #990000;
+    background-color: #F9A01B;
+}
+
+
+body.lakers {
+    background-color: #2E1A47; /* purple */
+    color: #FFD700;            /* gold */
+}
+
+body.lakers .title {
+    color: inherit;
+    background: transparent;
+}
+
+body.lakers #btn {
+    color: #2E1A47;
+    background-color: #FFD700;
+}
+
+
+/* smooth transitions */
+body,
+#btn,
+.title,
+#message {
+    transition: background-color 1s, color 1s;
+}
+
+.title {
+    background: transparent;
+}
