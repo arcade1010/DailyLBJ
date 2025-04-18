@@ -1,6 +1,7 @@
 {
   "name": "dailylbj",
   "version": "1.0.0",
+  "type": "module",
   "description": "Daily LBJ facts",
   "main": "index.js",
   "scripts": {
